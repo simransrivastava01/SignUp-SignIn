@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign-up</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #262833">
+  <div class="container">
+    <form method="post" onsubmit="signup(event)">
+      <br />
+      <h1 class="label">Sign-Up</h1>
+      <hr />
+      <div class="form-group">
+        <input type="text" class="form-control" name="txt_uname" placeholder="Enter Username" required />
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" name="txt_umail" placeholder="Enter E-Mail ID" required />
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" name="txt_upass" placeholder="Enter Password" required />
+      </div>
+      <div class="clearfix"></div>
+      <hr />
+      <div class="form-group">
+        <button type="submit" class="btn btn-block btn-primary" name="btn-signup">
+          <i class="glyphicon glyphicon-open-file"></i>SIGN UP
+        </button>
+      </div>
+      <br />
+      <label>Already! have an account ! <a href="index.html">Sign In</a></label>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

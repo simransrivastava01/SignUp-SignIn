@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign-In</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #262833">
+  <div class="container">
+    <form class="login_form" method="post" name="form" onsubmit="login(event)">
+      <br />
+      <h1 class="label">Sign-In</h1>
+      <hr />
+
+      <div class="form-group">
+        <input type="text" class="form-control" name="txt_umail" id="email" placeholder="Username or E mail ID"
+          required />
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" name="txt_upass" id="pass" placeholder="Your Password" required />
+      </div>
+
+      <div class="clearfix"></div>
+      <hr />
+      <div class="form-group">
+        <button type="submit" name="btn-login" class="btn btn-block btn-primary">
+          <i class="glyphicon glyphicon-log-in"></i>SIGN IN
+        </button>
+      </div>
+      <br />
+      <label>Don't have account yet ! <a href="sign-up.html">Sign Up</a></label>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
