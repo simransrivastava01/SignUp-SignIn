@@ -13,18 +13,19 @@ function login(ev) {
 
     var errors = [];
     if (!email) {
-        alert("Please enter your user email id");
+        errors.push("Please enter your user email id");
     } else if (!emailRegex.test(email)) {
-        alert("Invalid email");
+        errors.push("Invalid email");
     }
     if (!pwd) {
-        alert("Please enter Password");
+        errors.push("Please enter Password");
     } else if (!pwdRegex.test(pwd)) {
-        alert("Invalid password");
+        errors.push("Invalid password");
     }
 
     if (errors.length) {
-        console.log(errors)
+        //console.log(errors)
+        alert(errors);
         return;
     }
     if (!errors.length) {
@@ -66,24 +67,24 @@ function signup(ev) {
         errors.push("Please enter your user email id");
     } else if (!emailRegex.test(email)) {
         errors.push("Invalid email");
-        alert("Invalid email");
     }
     if (!pwd) {
-        alert("Please enter Password");
+        errors.push("Please enter Password");
     } else if (!pwdRegex.test(pwd)) {
-        alert("Invalid password");
+        errors.push("Invalid password");
     }
     if (!uname) {
-        alert("Please enter username");
+        errors.push("Please enter username");
     } else if (!usernameRegex.test(uname)) {
-        alert("Invalid username");
+        errors.push("Invalid username");
     }
 
     if (errors.length) {
-        console.log(errors)
+        //console.log(errors)
+        alert(errors);
         return;
     }
-    debugger
+
     if (!errors.length) {
         $.ajax({
             url: "Sign-Up.php",
